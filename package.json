@@ -1,0 +1,44 @@
+{
+  "name": "nuxt-template",
+  "version": "1.0.0",
+  "description": "My laudable Nuxt.js project",
+  "author": "Estuardo Aguirre",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "dev": "cross-env HOST=0.0.0.0 NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.5.4",
+    "@nuxtjs/style-resources": "^0.1.2",
+    "express": "^4.17.1",
+    "nuxt": "^2.8.1",
+    "nuxt-i18n": "^5.12.7",
+    "nuxt-webfontloader": "^1.1.0",
+    "prismic-dom": "^2.1.0",
+    "prismic-javascript": "^2.0.3",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^0.0.1",
+    "@nuxtjs/eslint-module": "^0.0.1",
+    "babel-eslint": "^10.0.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": ">=12.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jest": "^22.7.1",
+    "eslint-plugin-node": ">=9.1.0",
+    "eslint-plugin-nuxt": ">=0.4.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": ">=4.0.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "sass-loader": "7.1.0"
+  }
+}
